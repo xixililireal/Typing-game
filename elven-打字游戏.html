@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>打字游戏</title>
+		<script	src="js/mainButton.js" type="text/javascript" charset="UTF-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/welcomePage.css"/>
+	</head>
+	<body>
+		<!--游戏欢迎页面-->
+		<div id="welcomePage">
+			<img id="logo" src="../img/imgs/logo.png" />
+			<div id="mainButton">
+				<!--/**
+				 * this.id指当前的img的id
+				 * down(this.id) 函数传参数
+				 * id名与函数名不能一致
+				 */-->
+				<img id="aboutUs" src="../img/imgs/3.png" onmousedown="down(this.id)" onmouseup="up(this.id)"/>
+				<img id="startGame" src="../img/imgs/1.png" onmousedown="down(this.id)" onmouseup="up(this.id)" onclick="startGame3()"/>
+			</div>
+		</div>
+		<!--游戏主页-->
+		<div id="mainPage">
+			<div id="second">
+				<img id="time" src="../img/imgs/3-3.png"/>
+			</div>
+			<div id="left">
+				<img id="back" src="../img/imgs/7.png" onclick="backtoWelcome()"/>
+			</div>
+			<div id="right">
+				<img id="stop" src="../img/imgs/10.png" onmousedown="stopGhost()" /><!--onclick="startGhost()" onmouseover="startGhost()"-->
+				<img id="start" src="../img/imgs/11.png" onmousedown="startGhost()" />
+				<img id="setting" src="../img/imgs/8.png"  onmousedown="settingGame()"/>
+				
+			</div>
+			<!--设置面板-->
+			<div id="setGame">
+				<img id="settingPanel" src="../img/imgs/optionPanelBg.png" />
+				<img id="gameDegree" src="../img/imgs/33.png" />
+				<img id="gameLeft" src="../img/imgs/14.png" onmousedown="leftReduction()"/>
+				<span id="degree">1</span>
+				<img id="gameRight" src="../img/imgs/16.png" onmousedown="rightIncrese()"/>
+				<img id="setCircle" src="../img/imgs/40.png" onclick="setCricle()"/>
+				<img id="cancel" src="../img/imgs/42.png"  onclick="cancelPanel()"/>
+			</div>
+			<div id="number">
+				<span id="num">0</span>
+			</div>
+		</div>
+			<script type="text/javascript">
+				document.oncontextmenu=new Function("event.returnValue=false");
+				document.onselectstart=new Function("event.returnValue=false");
+			</script>
+	</body>
+</html>
