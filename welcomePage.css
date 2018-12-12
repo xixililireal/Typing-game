@@ -1,0 +1,155 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: url(../../img/imgs/bk.jpg) no-repeat;
+	background-size: cover;
+}
+
+#welcomePage{
+	text-align: center;
+}
+
+#logo{
+	width: 500px;
+	margin-top: 80px;
+}
+
+#mainButton img{
+	width: 300px;
+	height: 230px;
+	margin-top: 30px;
+}
+
+#mainPage{
+	display:none;
+}
+
+#left img{
+	width: 120px;
+	height: 120px;
+}
+#back{
+	position: fixed;
+	left: 5px;
+	bottom: 5px;
+	display: block;
+}
+
+#right img{
+	width: 120px;
+	height: 120px;
+}
+
+#right{
+	display:block;
+}
+
+#stop{
+	position: fixed;
+	right: 5px;
+	bottom: 125px;
+}
+#start{
+	position: fixed;
+	right: 5px;
+	bottom: 125px;
+	display: none;
+}
+#setting{
+	position: fixed;
+	right: 5px;
+	bottom: 5px;
+}
+#setGame{
+	width: 400px;
+	height: 430px;
+	margin: 0 auto;
+	padding-top: 100px;
+	display: none;
+	position: relative;
+}
+#settingPanel{
+	/*background: url(../img/imgs/optionPanelBg.png) no-repeat;
+	background-size: cover;*/
+	width: 400px;
+	height: 430px;
+	margin: 0 auto;
+}
+#setCircle{
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	bottom: 50px;
+	left: 75px;
+	
+}
+#cancel{
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	bottom: 50px;
+	left: 220px;
+	
+}
+#gameDegree{
+	padding-top: 100px;
+	position: absolute;
+	top: 200px;
+	left: 70px;
+}
+#gameLeft{
+	padding-top: 100px;
+	position: absolute;
+	top: 200px;
+	left: 190px;
+}
+#degree{
+	padding-top: 100px;
+	width: 105px;
+	height: 64px;
+	color: dodgerblue;
+	font-weight: bold;
+	font-size: 50px;
+	font-family: "隶书";
+	position: absolute;
+	top: 200px;
+	left: 240px;
+}
+#gameRight{
+	padding-top: 100px;
+	position: absolute;
+	top: 200px;
+	left: 280px;
+}
+
+
+#second img{
+	width: 100px;
+	height: 100px;
+}
+.ghost{
+	color:darkred;
+	background: url(../../img/imgs/5.png) no-repeat;
+	/*div的大小*/
+	width: 60px;
+	height: 60px;
+	/*div里的内容与边框的距离*/
+	padding-left:65px;
+	padding-top: 60px;
+	position: absolute;
+	bottom: 0px;
+	/*display: none;*/
+	font-size: 20px;
+}
+
+#num{
+	width: 60px;
+	height: 40px;
+	color: darkred;
+	font-size: 60px;
+	position: fixed;
+	top: 10px;
+	right: 60px;
+}
